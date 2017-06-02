@@ -1,0 +1,1 @@
+Simple web application that displays the current temperature and description of weather conditions.
