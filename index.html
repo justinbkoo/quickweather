@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>QuickWeather</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="title">
+      Quick Weather
+    </div>
+    <div id="subtitle">
+      Right here | Right now
+    </div>
+    <div id="content">
+      <canvas id="icon" width="128", height="128"></canvas>
+      <span id="temperature"></span><span id="unit"> &degF</span><span> in </span><span id="location"></span>
+        <span><button onClick="toggleUnit()" id="unitbutton" style="background-color: ; margin: 0px;">to Celsius</button></span>
+      <div id="summary"></div>
+      <div style="font-size: 20px;">
+        <span>as of </span>
+        <span id="date"></span>
+        <span>&nbsp|</span>
+        <span><button onClick="navigator.geolocation.getCurrentPosition(retrieveData)" id="updatebutton">Update</button></span>
+      </div>
+    </div>
+    <center><footer style="margin-top: 100px;">Copyright &copy 2017 Justin Koo</footer></center>
+</body>
+
+</html>

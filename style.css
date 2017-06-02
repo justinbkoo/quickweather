@@ -1,0 +1,70 @@
+body {
+  background-image: ;
+  background-color: #111111;
+}
+
+.container-fluid {
+  background-color: ;
+}
+
+.btn {
+  outline: 0;
+  background-color: rgba(0,0,0,0);
+  border: 0px solid black;
+}
+.btn:active {
+  outline: none;
+}
+
+#title {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+#subtitle {
+  font-size:20px;
+  color: white;
+  text-align: center;
+}
+
+#content {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 60px;
+  color:white;
+  background-color: ;
+}
+#icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#temperature {
+  display:inline-block;
+}
+#unitbutton {
+  cursor: pointer;
+  color: white;
+  border: 0px solid white;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  font-size: 15px;
+  display: inline-block;
+}
+#unitbutton:hover {
+  transform: scale(1.1);
+}
+
+#updatebutton {
+  cursor: pointer;
+  color: white;
+  border: 0px solid white;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  font-size: 20px;
+  display: inline-block;
+}
+#updatebutton:hover {
+  transform: scale(1.1);
+}
